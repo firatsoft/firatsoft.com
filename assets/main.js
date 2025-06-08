@@ -12,19 +12,21 @@ window.addEventListener('load', () => {
     }, 500);
 });
 
-const originalTitle = document.title;
-const tabMessages = [
-    'Gelecek için bizimle kalın! 🚀',
-    'Yenilikler için takipte kalın!',
-    'Fırat Soft yakında burada! ✨',
-    'Döndüğünüzde sürprizlerimiz olacak! 🎉',
-];
+document.addEventListener("DOMContentLoaded", function() {
+    const originalTitle = document.title;
+    const tabMessages = [
+        'Gelecek için bizimle kalın! 🚀',
+        'Yenilikler için takipte kalın!',
+        'Fırat Soft yakında burada! ✨',
+        'Döndüğünüzde sürprizlerimiz olacak! 🎉',
+    ];
 
-document.addEventListener('visibilitychange', function() {
-    if (document.visibilityState === 'hidden') {
-        const randomMessage = tabMessages[Math.floor(Math.random() * tabMessages.length)];
-        document.title = randomMessage;
-    } else {
-        document.title = originalTitle;
-    }
+    document.addEventListener('visibilitychange', function() {
+        if (document.visibilityState === 'hidden') {
+            const randomMessage = tabMessages[Math.floor(Math.random() * tabMessages.length)];
+            document.title = randomMessage;
+        } else {
+            document.title = originalTitle;
+        }
+    });
 });
