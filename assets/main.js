@@ -1,16 +1,3 @@
-tailwind.config = {
-    theme: {
-        extend: {
-            fontFamily: {
-                'inter': ['Inter', 'sans-serif'],
-            },
-            colors: {
-                'brand-blue': '#2a57c4',
-                'brand-blue-dark': '#1e40af',
-            }
-        }
-    }
-}
 
 const currentYear = new Date().getFullYear();
 document.getElementById('yearFooter').textContent = currentYear;
