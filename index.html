@@ -8,13 +8,29 @@
 </head>
 <body class="min-h-screen flex items-center justify-center bg-[#2a57c4]">
 <div class="flex flex-col items-center justify-center w-full px-4">
-    <img
-            src="assets/logo.svg"
-            alt="Fırat Soft Logo"
-            class="w-[280px] sm:w-[340px] md:w-[420px] lg:w-[520px] max-w-full mb-10 animate-fade-in"
-            style="animation: fade-in 1.2s cubic-bezier(.51,1.15,.62,1) forwards; opacity:0;"
-            onload="this.style.opacity=1"
-    >
+    <div class="mb-10 w-full flex justify-center">
+        <!-- SVG sadece logo, arka plan yok, responsive -->
+        <svg
+                viewBox="0 0 1920 1080"
+                class="w-[280px] sm:w-[340px] md:w-[420px] lg:w-[520px] max-w-full h-auto"
+                fill="white"
+                aria-label="Fırat Soft Logo"
+                xmlns="http://www.w3.org/2000/svg"
+        >
+            <text
+                    x="50%"
+                    y="45%"
+                    dominant-baseline="middle"
+                    text-anchor="middle"
+                    font-family="'Sulphur Point', 'Fira Code', monospace"
+                    font-size="300"
+                    font-weight="bold"
+                    fill="#fff"
+            >
+                Fırat Soft
+            </text>
+        </svg>
+    </div>
     <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow text-center animate-fade-in2"
         style="animation: fade-in2 1.3s 0.3s forwards; opacity:0;">
         Çok Yakında!
@@ -22,7 +38,7 @@
 </div>
 <style>
     @keyframes fade-in {
-        0%   { transform: scale(0.96) translateY(-32px); opacity: 0; }
+        0% { transform: scale(0.96) translateY(-32px); opacity: 0; }
         100% { transform: scale(1) translateY(0); opacity: 1; }
     }
     .animate-fade-in {
@@ -30,7 +46,7 @@
         opacity: 0;
     }
     @keyframes fade-in2 {
-        0%   { opacity: 0; transform: scale(0.96);}
+        0% { opacity: 0; transform: scale(0.96);}
         100% { opacity: 1; transform: scale(1);}
     }
     .animate-fade-in2 {
